@@ -8,3 +8,4 @@ A bash script consists of 3 components:-
 										Eg- exit 0 { if no exit statement is provided exit status from the last command is taken as exit statement for script }
 
 ~~Note :- To run bash scripts we have to change permissions of the bash script to be executable										
+$ chmod u+x 'name of script'

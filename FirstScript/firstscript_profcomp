@@ -2,5 +2,13 @@
 
 # Author: Aakarsh MJ
 # Date Created: 
+# Last Date Modified:
+
+# Description
+# Prints "This is my first script" to command line
+
+# usage
+# firstscript_profcomp
+
 echo "This is my first script"
 exit 0
