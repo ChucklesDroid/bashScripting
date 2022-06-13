@@ -1,0 +1,21 @@
+To run scripts its essential we give execute permissions to the script in question, To do that we make use of 'chmod' command.
+For security reasons only user is given execute permissions !!
+
+To give read, write and execute permissions to owner of a file and no permissions to group and others:
+$ chmod 0700 'file name'
+
+The first bit of 4 bit octal no( here 0700 ) represents special flags.
+The second bit of 4 bit octal no(here 0700 ) represents read, write and execute permissions for owner.
+The third bit of 4 bit octal no( here 0700 ) represents read, write and execute permissions for group.
+The fourth bit of 4 bit octal no( here 0700) represents read, write and execute permissions for others.
+
+7 = 4 + 2 + 1 (read + write + execute)
+4(only read)
+2(only write)
+1(only execute)
+6(read + write)
+5(read + execute)
+
+
+**Note** 
+While running the script user must have both read and write permissions so that the shell can read the script.
