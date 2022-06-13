@@ -1,0 +1,10 @@
+For our scripts to look professional it should have 5 parts as comments in the beginning of our scripts:-
+1) Name of Author
+2) Date Created
+3) Last Modified
+4) Description
+5) Usage
+
+**Note**
+Both usage and description will have a line left before and after the section and details of the section will begin from next line to make
+it more readable.
