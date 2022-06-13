@@ -1,0 +1,10 @@
+A bash script consists of 3 components:-
+1) shabang line( #! 'path of interpreter' ):- Eg- #! /bin/bash { making use of bash for interpreting commands }
+																							Eg2- #! /usr/bin/python3 { making use of python3 for interpreting commands }
+
+~ we usually leave a blank line after shabang line and there should be no line or blank line before shabang line
+2) commands { The interpreter executes set of commands 1 by 1 }
+3) exit statement:- This indicates the exit status of the script. Exit status 0 indicates no error whereas exit status 1-255 indicates error. 
+										Eg- exit 0 { if no exit statement is provided exit status from the last command is taken as exit statement for script }
+
+~~Note :- To run bash scripts we have to change permissions of the bash script to be executable										
