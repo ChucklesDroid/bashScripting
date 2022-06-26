@@ -1,0 +1,4 @@
+Command substitution is used to make use of output of a command maybe in a script or anyother command.
+syntax: $("some random command")
+Example:
+touch echo $(date)
