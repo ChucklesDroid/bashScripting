@@ -1,0 +1,24 @@
+In linux to run your scripts directly from any directory without specifying the path name, we make use of PATH variable.
+
+Eg:-
+export PATH="$PATH:/mnt/sda1/GITHUB/bashScripting/FirstScript"
+
+by adding the above line in bash.profile, the interpreter will load the above line everytime. By doing this we can run the script as command directly from command line
+Like Eg:- backup_script
+
+The above :-
+export PATH="$PATH:/mnt/sda1/GITHUB/bashScripting/FirstScript"
+
+can be broken down into following parts:
+1) export is not a command rather it is built into bash itself
+2) first PATH is referring to environment PATH variable
+3) the string following $PATH can be explained as follows:-
+For Eg:-
+if initially PATH contained x:y:z (paths in PATH is seperated by ':') 
+then on executing something like - export PATH="$PATH:a:b:c", the path will then be modified to contain something like-
+x:y:z:a:b:c
+
+But if export PATH="a:b:c:$PATH" is run then PATH variable will look something like this-
+a:b:c:x:y:z
+
+The order matters as those appearing on the left will be searched first for a particular command.
