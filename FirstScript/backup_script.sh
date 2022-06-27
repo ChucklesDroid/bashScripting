@@ -1,3 +1,5 @@
+#! /usr/bin/zsh
+
 # Author: Aakarsh MJ
 # Date Created: 26/06/22
 # Last Modified: 26/06/22 12:50PM
@@ -9,6 +11,6 @@
 # Usage:
 # ./backup_script
 
-#! /usr/bin/zsh
 tar -cvf /mnt/sda1/GITHUB/bashScripting/FirstScript/mybackup_$(date +%d-%m-%y_%k-%M-%S).tar ~/* 2>/dev/null
+
 exit 0
