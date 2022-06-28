@@ -1,0 +1,20 @@
+Brace Expansion consists of 2 types of lists.
+a) String Lists 		// no space can be left b/w commas
+Eg: {1,Aakarsh,89}
+b) Range Lists: Works on consecutive values only example: numbers and alphabets.
+Eg: {1..32}   // To create a range list starting from 1 to 32
+echo {a..z} // To print alphabets
+echo {z..a} // To print alphabets in reverse order
+
+
+Range list also has step functionality. Eg:
+echo {1..30..3}
+
+Making use of leading zeroes to ensure all the expansions have same no of digits. Ex:
+echo {01..30..2}
+
+Making use of multiple brace expansions in a single command.
+
+Ex: touch month{01..12}
+Ex: mkdir month{01..12}/day{01..30}
+Ex: rm -r month{01..12}/day{01..30}
