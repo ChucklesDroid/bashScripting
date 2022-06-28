@@ -6,10 +6,10 @@
 
 # Description:
 # This script is used to create a backup of home_directory of the user and saves 
-# the script in form of date-month-year-time.tar in the bashScripting folder
+# the script in form of "mybackup_date-month-year-time.tar" in the current working folder
 
 # Usage:
-# ./backup_script
+# ./backup_script.sh OR source backup_script.sh
 
 echo Hello, ${USER^}
 echo I will now back up your home directory, ${HOME}
