@@ -1,0 +1,14 @@
+Tilde expansion (~) stores the full path of the user's home directory.
+On a system having multiple users, to access user's home directory, we write : echo ~'usr_name'
+Eg: echo ~root
+
+Bash stores the current directory's path in shell variable "PWD" and previous path in shell variable "OLDPWD".
+Eg: To change directory to previous working directory:-
+
+cd $OLDPWD
+echo $PWD
+
+But since both $PWD and $OLDPWD are quite long to type out we instead make use of ~ expansion to do the same task.
+Eg:
+cd ~-  // To access $OLDPWD.
+echo ~+  // To print current working directory full path.
