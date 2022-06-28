@@ -1,0 +1,31 @@
+To save result of arithmetic operations we make use of $(()) in bash scripting.
+$(()) works only with whole numbers.
+It follows BODMAS operation precedence, if precedence is same then execution occurs from left.
+To calculate integer values we make use of basic calculator i.e bc command.
+
+Eg1:
+$((4+2))
+
+Eg2:
+x=3
+y=4
+$(( $x + $y ))
+
+
+Eg3:
+x=3
+y=4
+$(( x+y ))
+
+Eg4:
+x=4
+y=2
+$(( x*y ))
+$(( x+y ))
+$(( x/y ))
+$(( x-y ))
+$(( x**y )) // exponential operator
+$(( x%y ))  // modulus operator
+
+Eg5:
+$(( 2+4*5 )) //Result is 22
