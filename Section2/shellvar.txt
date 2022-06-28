@@ -1,0 +1,13 @@
+Shell variables are of 2 types:
+a) Bourne shell variables( around 10 )
+b) Bash shell variables( around 95 )
+
+Commonly used shell variables:
+a) $USER: this variable contains the name of the current user. To reference the variable : $USER
+b) $HOME: this variable contains the path of the home directory of the current user.
+c) $PATH: this variable is the equivalent of environment path variable in Windows. In essence the shell searches the locations defined in the path variable successively after searching through the current directory in which shell is called.
+d) $HOSTNAME: The name of the computer user has given.
+e) $HOSTTYPE: The processsor architecture.
+f) $PS1: short for 'Prompt String 1'. It is the prompt that is shown every time when our terminal is booted. We can redefine by storing the value in our bashrc file. "ezprompt.net" gives a detailed description for this. To reference the variable we can simply type $PS1 , the output would contain color coding and stuff related to display.
+
+
