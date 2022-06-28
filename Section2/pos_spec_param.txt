@@ -11,6 +11,6 @@ $@: To access the arguments as arrays
 $*: To get all positional arguments except $0
 $?: exit status of the last command executed by shell
 $$: PID of current shell
-$!: most recent job placed in background
+$!: PID of the most recent job placed in background
 $_: last argument passed to your prev command
 
