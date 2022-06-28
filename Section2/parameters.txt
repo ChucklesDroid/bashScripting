@@ -1,0 +1,16 @@
+In bash, there are 3 types of parameters:
+a) Variables(most common)
+b) Positional Parameters
+c) Special Parameters
+
+
+In bash, variables are of 2 types:-
+a) User defined variables:- by convention, they are to be defined in lower-case.
+b) Shell variables:- by convention, they are defined in upper-case.
+
+Assigning a variable in bash:
+Eg:- student="Aakarsh" { note: there is no space b/w '=' and variable name & value }
+
+Referencing a variable in bash: We make use of parameter expansion for referrencing a variable.
+Eg: Name of student is ${student} // Result is "Name of student is Aakarsh"
+
