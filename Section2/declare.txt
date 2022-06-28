@@ -1,0 +1,2 @@
+'declare' is a built-in command of bash shell.
+

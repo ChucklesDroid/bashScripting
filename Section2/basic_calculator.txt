@@ -8,3 +8,4 @@ Eg: echo "scale=10; 5/2" | bc
 Eg: echo "scale=2; 2/3" | bc
 
 scale parameter should always precede the operation.
+Note:- To perform exponentiation in bc, we make use of caret(^) and not ** to perform exponentiation.

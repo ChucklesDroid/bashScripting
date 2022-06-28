@@ -1,0 +1,16 @@
+Positional parameters are basically arguments to the function, which are referenced using $N when single digits or using
+${NM} when more than one digit.
+
+By default $0 contains the name of the script when run with source or ./'name_of_script'.
+The following numbers are assigned to successive command line arguments to the shell script.
+
+Special Parameters:-
+
+$#: To get the total count of no of shell arguments
+$@: To access the arguments as arrays
+$*: To get all positional arguments except $0
+$?: exit status of the last command executed by shell
+$$: PID of current shell
+$!: most recent job placed in background
+$_: last argument passed to your prev command
+
