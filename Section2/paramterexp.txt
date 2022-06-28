@@ -1,0 +1,30 @@
+Parameter expansion allows us to not only use values of parameters in script but to also format it according to our needs.
+
+a) To represent text such that first letter is a lower case:
+Eg: 	${name,}  
+
+b) To represent entire text in lower case:
+Eg: 	${name,,}
+
+c) To represent text capitalized(we make use of caret symbol '^'):
+Eg: {name^}
+
+d) To represent entire text in uppercase:
+Eg: ${name^^}
+
+e) To determine the length of parameter:
+Eg: ${#name}
+
+f) To slice parameter so as to only output the specific parts you want to work with:
+
+syntax: ${'variable_name':offset:length}
+Eg: ${name:0:7} // which basically specifies the output starts from index 0 and would be 7 word length
+
+To reference variable from the end, we would make use of negative numbers and in such case negative numbers should have a space left out.
+Eg: ${name: -2: 4}
+
+If we are not specifying the 2nd colon it would mean to represent till end index
+Eg: ${name: -2}
+
+If we are specifying the end colon, an empty string would be referenced
+Eg: ${random_string: 4} //if 'random_string' does not exist then an empty string will be outputed
