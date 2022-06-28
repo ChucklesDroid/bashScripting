@@ -1,0 +1,10 @@
+Basic Calculator is used to perform integer operations. 
+To make bc command run with our bash scripts to perform integer operations,we make use of echo to provide standard input to bc command.
+scale parameter helps in deciding the precision by specifying the numbers of decimal points.
+We seperate the scale and operation with ';'
+Syntax: echo "expression" | bc
+
+Eg: echo "scale=10; 5/2" | bc
+Eg: echo "scale=2; 2/3" | bc
+
+scale parameter should always precede the operation.
